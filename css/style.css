@@ -1089,8 +1089,8 @@ ol {
   justify-content: center;
   overflow: hidden;
   background:
-    linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-    url('../images/hero_woman.png') center/cover;
+    linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)),
+    url('../images/science_bg.png') center/cover;
 }
 
 .story-hero__content {
