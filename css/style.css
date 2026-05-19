@@ -1125,9 +1125,10 @@ ol {
 
 .story-container p {
   font-size: 20px;
-  line-height: 2.1;
-  margin-bottom: 24px;
-  color: #333;
+  font-weight: 500;
+  line-height: 1.85;
+  margin-bottom: 18px;
+  color: var(--dark);
   font-family: var(--font-serif);
   letter-spacing: 0.02em;
 }
@@ -1151,9 +1152,11 @@ ol {
 }
 
 .story-list li {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-size: 19px;
-  color: #555;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--dark-mid);
   font-family: var(--font-serif);
   position: relative;
   padding-left: 12px;
