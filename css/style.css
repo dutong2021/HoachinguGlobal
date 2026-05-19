@@ -1089,8 +1089,8 @@ ol {
   justify-content: center;
   overflow: hidden;
   background:
-    linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)),
-    url('../images/science_bg.png') center/cover;
+    linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+    url('../images/hero_woman.png') center/cover;
 }
 
 .story-hero__content {
@@ -1115,42 +1115,92 @@ ol {
 }
 
 .story-content {
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .story-container {
-  max-width: 850px;
+  max-width: 800px;
   margin: auto;
 }
 
 .story-container p {
-  font-size: 22px;
-  line-height: 2;
-  margin-bottom: 32px;
-  color: #444;
+  font-size: 20px;
+  line-height: 2.1;
+  margin-bottom: 24px;
+  color: #333;
+  font-family: var(--font-serif);
+  letter-spacing: 0.02em;
+}
+
+/* Add an elegant drop cap to the very first paragraph of the story */
+.story-container > p:nth-of-type(1)::first-letter {
+  float: left;
+  font-size: 80px;
+  line-height: 60px;
+  padding-right: 12px;
+  padding-top: 8px;
+  color: var(--gold-dark);
+  font-family: var(--font-serif);
+  font-style: italic;
 }
 
 .story-list {
-  margin: 40px 0;
-  padding-left: 24px;
+  margin: 32px 0 40px;
+  padding-left: 20px;
+  border-left: 2px solid var(--gold-light);
 }
 
 .story-list li {
-  margin-bottom: 16px;
-  font-size: 22px;
+  margin-bottom: 12px;
+  font-size: 19px;
   color: #555;
+  font-family: var(--font-serif);
+  position: relative;
+  padding-left: 12px;
+}
+
+.story-list li::before {
+  content: "—";
+  position: absolute;
+  left: -20px;
+  color: var(--gold);
 }
 
 .story-quote {
-  font-size: 34px;
+  font-size: 32px;
   line-height: 1.6;
   text-align: center;
-  margin: 80px 0;
-  color: #b88a3b;
-  font-family: 'Cormorant Garamond', serif;
+  margin: 60px 0;
+  padding: 40px;
+  color: var(--gold-dark);
+  font-family: var(--font-serif);
+  font-style: italic;
+  position: relative;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--r-md);
+  border-top: 3px solid var(--gold);
+}
+
+.story-quote::before {
+  content: "“";
+  font-size: 80px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  color: var(--gold-light);
+  opacity: 0.4;
+  font-family: Georgia, serif;
+}
+
+.story-container strong {
+  color: var(--gold-dark);
+  font-weight: 600;
 }
 
 .story-back {
   text-align: center;
   margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid var(--cream-dark);
 }
